@@ -1,0 +1,35 @@
+@import url(../../styles/variables.scss);
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top:40px;
+
+    &__logo {
+        &__img {
+            width: 210px;
+        }
+    }
+
+    &__navbar {
+        & ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 57px;
+        }
+
+        &__link {
+            font-size: 24px;
+            font-family: 'Montserrat';
+            font-weight: 500;
+        }
+        
+    }
+    }
+
+
+

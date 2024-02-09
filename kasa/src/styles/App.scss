@@ -1,0 +1,23 @@
+@import 'variables';
+
+
+
+html {
+    position: relative;
+    margin: auto;
+    max-width: 1440px;
+    font-family: 'Montserrat-Regular';
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+}
