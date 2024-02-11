@@ -1,0 +1,20 @@
+.banner {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 50px 32px;
+    &__title {
+        position: absolute;
+        color: white;
+        font-size: 48px;
+        z-index: 1;
+    }
+    &__image {
+        width: 1240px;
+        height: 223px;
+        border-radius: 25px;
+        object-fit: cover;
+        filter: brightness(60%);
+    }
+}

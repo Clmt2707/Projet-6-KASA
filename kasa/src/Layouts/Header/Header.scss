@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 1240px;
     margin: auto;
     margin-top:40px;
 
@@ -23,6 +23,7 @@
         }
 
         &__link {
+            display: flex;
             font-size: 24px;
             font-family: 'Montserrat';
             font-weight: 500;

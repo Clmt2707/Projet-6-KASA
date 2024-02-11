@@ -15,7 +15,9 @@ function Header() {
                     <li className="header__navbar__link">
                         <NavLink
                             style={({ isActive }) => {
-                                return isActive ? { textDecoration:"underline", textDecorationThickness: "1.5px",textUnderlineOffset: "3px"} : {}
+                                return isActive ? { textDecoration:"underline",
+                                 textDecorationThickness: "1.5px",
+                                 textUnderlineOffset: "3px"} : {}
                             }}
                             end to={'/'}>
                             Accueil
@@ -24,7 +26,10 @@ function Header() {
                     <li className="header__navbar__link">
                         <NavLink
                             style={({ isActive }) => {
-                                return isActive ? { textDecoration:"underline", textDecorationThickness: "1.5px",textUnderlineOffset: "3px"} : {}
+                                return isActive ? { textDecoration:"underline",
+                                                    textDecorationThickness: "1.5px",
+                                                    textUnderlineOffset: "3px",
+                                } : {}
                             }}
                             end to={'/apropos'}>
                             À Propos
