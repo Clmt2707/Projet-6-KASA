@@ -4,13 +4,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1240px;
-    margin: auto;
-    margin-top:40px;
+    margin: 30px auto;
+    width: 84.8%;
 
     &__logo {
         &__img {
             width: 210px;
+            height: 68px;
         }
     }
 
@@ -19,13 +19,12 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 57px;
+            gap: 50px;
         }
 
         &__link {
             display: flex;
             font-size: 24px;
-            font-family: 'Montserrat';
             font-weight: 500;
         }
         

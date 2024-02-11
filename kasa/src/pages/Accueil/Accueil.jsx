@@ -6,7 +6,7 @@ function Accueil() {
     return(
         <>
             <Layout>
-                <Banner />
+                <Banner page="/" content="Chez vous, partout et ailleurs" />
             </Layout>
         </>
     )
