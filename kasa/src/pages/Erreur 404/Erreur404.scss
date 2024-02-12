@@ -1,0 +1,36 @@
+@import "../../styles/variables.scss";
+
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 84.8%;
+    gap: 120px;
+    margin: 100px auto;
+
+    &__image {
+        width: 48.93%;
+    }
+
+    &__content {
+        color: $principal-color;
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    a {
+        position: relative;
+        font-size: 18px;
+        
+    }
+    a::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 1px; 
+        width: 100%;
+        height: 1px; 
+        background-color: black; 
+    }
+}

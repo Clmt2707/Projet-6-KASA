@@ -1,0 +1,42 @@
+@import "../../styles/App.scss";
+@import "../../styles/variables.scss";
+.logements {
+    width: 84.8%;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    margin: 50px auto;
+
+    &__list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;
+        gap: 30px;
+        padding: 30px;
+    
+        &__item {
+            position: relative;
+        
+            &__cards {
+                color: $second-text-color;
+                
+                .logements-img {
+                    border-radius: 10px;
+                    width: 340px;
+                    height: 340px;
+                    object-fit: cover;
+                }
+
+                .logements-title {
+                    width: 91%;
+                    position: absolute;
+                    font-size: 18px;
+                    bottom: 16px;
+                    left: 15px;
+
+                }
+            }
+        }
+    }
+
+}

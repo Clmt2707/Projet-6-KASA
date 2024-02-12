@@ -28,7 +28,7 @@ function Header() {
                             style={({ isActive }) => {
                                 return isActive ? { textDecoration:"underline",
                                                     textDecorationThickness: "1.5px",
-                                                    textUnderlineOffset: "3px",
+                                                    textUnderlineOffset: "3px"
                                 } : {}
                             }}
                             end to={'/apropos'}>

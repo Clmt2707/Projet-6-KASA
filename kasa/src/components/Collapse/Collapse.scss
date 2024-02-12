@@ -1,0 +1,38 @@
+@import "../../styles/variables.scss";
+
+.collapse {
+    width: 84.8%;
+    margin: 30px auto;
+    &__container {
+        width: 83.7%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        background-color: $principal-color;
+        border-radius: 5px;
+        padding: 10px 20px;
+        color: $second-text-color;
+
+        &__title {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        &__icon {
+            font-size: 24px;
+        }
+
+        &__text {
+            width: 83.7%;
+            margin: auto;
+            background-color: #F6F6F6;
+            border-radius: 5px;
+            padding: 10px 20px;
+            display: flex;
+            align-content: space-around;
+            line-height: 1.5;
+            animation: slide 1s ease-in;
+        }
+    }
+}
