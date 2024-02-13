@@ -1,5 +1,23 @@
 @import "../../styles/variables.scss";
 
+@keyframes slide {
+    0% {
+        overflow: hidden;
+        max-height: 0%;
+        opacity: 0;
+    }
+    
+    50% {
+        max-height: 50%;
+    }
+    
+    100% {
+        max-height: 100%;
+    }
+}
+
+
+
 .collapse {
     width: 84.8%;
     margin: 30px auto;
@@ -13,6 +31,7 @@
         border-radius: 5px;
         padding: 10px 20px;
         color: $second-text-color;
+        z-index: 1;
 
         &__title {
             font-size: 24px;
@@ -21,18 +40,26 @@
 
         &__icon {
             font-size: 24px;
+            cursor: pointer;
+            transition: transform 300ms ease-in;
+        }
+        &__icon.rotate {
+            transform: rotate(-180deg);
         }
 
+        
         &__text {
+            position: relative;
+            z-index: -1;
             width: 83.7%;
-            margin: auto;
+            margin: -2px auto;
             background-color: #F6F6F6;
-            border-radius: 5px;
+            border-radius: 0 0 5px 5px;
             padding: 10px 20px;
             display: flex;
             align-content: space-around;
             line-height: 1.5;
-            animation: slide 1s ease-in;
+            animation: slide 800ms ease-in;
         }
     }
 }
