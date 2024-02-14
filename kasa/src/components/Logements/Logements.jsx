@@ -10,7 +10,7 @@ function Logements() {
             <div className="logements__list">
                 {Data.map((location) => (
                     <div key={location.id} className="logements__list__item">
-                        <Link to={"/logement" + location.id} className="logements__list__item__cards">
+                        <Link to={"/logement/" + location.id} className="logements__list__item__cards">
                             <img src={location.cover} alt={location.description} className="logements-img"/>
                             <h2 className="logements-title">{location.title}</h2>
                         </Link>
