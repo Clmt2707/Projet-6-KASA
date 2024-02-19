@@ -21,14 +21,14 @@
 
 .collapse {
     width: 84.8%;
-    margin: 30px auto;
+    margin: 0 auto 38px;
     @include mobile {
         width: 100%;
         margin: 0 auto 15px;
     }
 
     &__container {
-        width: 100%;
+        width: 83.8%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -66,7 +66,7 @@
         &__text {
             position: relative;
             z-index: -1;
-            width: 100%;
+            width: 83.8%;
             margin: -2px auto;
             background-color: #F6F6F6;
             border-radius: 0 0 5px 5px;
@@ -76,7 +76,7 @@
             line-height: 1.5;
             animation: slide 800ms ease-in;
             @include mobile {
-                width: 100%;
+                width: 90%;
                 font-size: 12px;
             }
         }

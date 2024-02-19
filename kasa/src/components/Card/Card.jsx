@@ -56,10 +56,13 @@ function Card() {
                 </div>
                 <div className="logement__details__content">
                     <Collapse title="Équipements"
-                            text={logement.equipments.map((equipments, index) =>
-                                <ul key={index}>
-                                    <li>{equipments}</li>
-                                </ul>)
+                            text={
+                                <ul>
+                                    {logement.equipments.map((equipments, index) => 
+                                        <li key={index}>
+                                            {equipments}
+                                        </li>)}
+                                </ul>
                             }/>
                 </div>
             </section>
