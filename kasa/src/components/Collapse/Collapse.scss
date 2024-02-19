@@ -1,4 +1,5 @@
 @import "../../styles/variables.scss";
+@import "../../styles/Breakpoint.scss";
 
 @keyframes slide {
     0% {
@@ -21,8 +22,13 @@
 .collapse {
     width: 84.8%;
     margin: 30px auto;
+    @include mobile {
+        width: 100%;
+        margin: 0 auto 15px;
+    }
+
     &__container {
-        width: 83.7%;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -31,17 +37,26 @@
         border-radius: 5px;
         padding: 10px 20px;
         color: $second-text-color;
-        z-index: 1;
+        @include mobile {
+            width: 90%;
+            padding: 4px 6px;
+        }
 
         &__title {
             font-size: 24px;
             font-weight: 700;
+            @include mobile {
+                font-size: 12px;
+            }
         }
 
         &__icon {
             font-size: 24px;
             cursor: pointer;
             transition: transform 300ms ease-in;
+            @include mobile {
+                font-size: 16px;
+            }
         }
         &__icon.rotate {
             transform: rotate(-180deg);
@@ -51,7 +66,7 @@
         &__text {
             position: relative;
             z-index: -1;
-            width: 83.7%;
+            width: 100%;
             margin: -2px auto;
             background-color: #F6F6F6;
             border-radius: 0 0 5px 5px;
@@ -60,6 +75,10 @@
             align-content: space-around;
             line-height: 1.5;
             animation: slide 800ms ease-in;
+            @include mobile {
+                width: 100%;
+                font-size: 12px;
+            }
         }
     }
 }

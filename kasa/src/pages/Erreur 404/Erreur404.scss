@@ -1,4 +1,5 @@
 @import "../../styles/variables.scss";
+@import "../../styles/Breakpoint.scss";
 
 .error {
     display: flex;
@@ -8,20 +9,35 @@
     width: 84.8%;
     gap: 120px;
     margin: 100px auto;
+    @include mobile {
+        width: 90%;
+        gap: 113px;
+    }
 
     &__image {
         width: 48.93%;
+        @include mobile {
+            width: 198px;
+            height: 99px;
+        }
     }
 
     &__content {
         color: $principal-color;
         font-size: 36px;
         text-align: center;
+        @include mobile {
+            font-size: 18px;
+            width: 62.3%;
+        }
     }
     
     a {
         position: relative;
         font-size: 18px;
+        @include mobile {
+            font-size: 14px;
+        }
         
     }
     a::after {

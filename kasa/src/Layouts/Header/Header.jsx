@@ -25,10 +25,11 @@ function Header() {
                     </li>
                     <li className="header__navbar__link">
                         <NavLink
+                            className="header__navbar__link--bar"
                             style={({ isActive }) => {
                                 return isActive ? { textDecoration:"underline",
                                                     textDecorationThickness: "1.5px",
-                                                    textUnderlineOffset: "3px"
+                                                    textUnderlineOffset: "3px",
                                 } : {}
                             }}
                             end to={'/apropos'}>

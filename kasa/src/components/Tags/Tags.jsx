@@ -6,12 +6,12 @@ import Data from "../../assets/logements/logements.json";
 
 function Tags() {
     const { id } = useParams();
-    const logement = Data.find((location) => location.id === id);
+    const logement = Data.find((logement) => logement.id === id);
 
     return (
         <div className="tags">
                 {logement.tags.map((tag, index) => (
-                    <p className="tags__item" key={id}>{tag}</p>
+                    <p className="tags__item" key={index}>{tag}</p>
                 ))}
         </div>
         )

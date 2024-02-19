@@ -1,4 +1,5 @@
 @import "../../styles/App.scss";
+@import "../../styles/Breakpoint.scss";
 
 .banner {
     width: 84.8%;
@@ -6,11 +7,22 @@
     justify-content: center;
     align-items: center;
     margin: 50px auto;
+    @include mobile {
+        margin: 15px auto;
+        width: 90%;
+    }
     &__content {
         position: absolute;
         color: white;
         font-size: 48px;
         z-index: 1;
+        @include mobile {
+            font-size: 24px;
+            width: 67%;
+            text-align: left;
+            left: 8%;
+        }
+
     }
     &__image {
         width: 100%;
@@ -18,6 +30,10 @@
         border-radius: 25px;
         object-fit: cover;
         filter: brightness(40%);
+        @include mobile {
+            height: 111px;
+            border-radius: 10px;
+        }
         
         &__about {
             filter: brightness(70%);

@@ -1,0 +1,27 @@
+@import "../../styles/variables.scss";
+@import "../../styles/Breakpoint.scss";
+
+.tags {
+    display: flex;
+    @include mobile {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        background-color: $principal-color;
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+        text-align: center;
+        border-radius: 10px;
+        margin: 30px  10px 30px 0;
+        padding: 5px 20px;
+        @include mobile {
+            padding: 5px 10px;
+            font-size: 10px;
+            margin: 10px 10px 8px 0;  
+        }
+        
+    }
+}
