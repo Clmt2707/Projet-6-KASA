@@ -6,10 +6,10 @@ import aboutImageBanner from '../../assets/aboutImageBanner.png'
 function Banner({page, content}) {
     const imgsrc = page === "/" ? imageBanner : aboutImageBanner;
     const imgClassName = page === "/" ? "banner__image" : "banner__image__about";
-
+    const imgAlt = page === "/" ? "Falaises en bord de mer" : "Montagnes enneigées et fleuve";
     return (
         <div className="banner">
-            <img className={`banner__image ${imgClassName}`} src={imgsrc} alt="Paysage mer et montagne"/>
+            <img className={`banner__image ${imgClassName}`} src={imgsrc} alt={imgAlt}/>
             <div className="banner__content">
                 <p>{content}</p>
             </div>

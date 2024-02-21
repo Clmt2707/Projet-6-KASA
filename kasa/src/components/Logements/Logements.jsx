@@ -8,11 +8,11 @@ function Logements() {
     return (
         <section className="logements">
             <div className="logements__list">
-                {Data.map((location) => (
-                    <div key={location.id} className="logements__list__item">
-                        <Link to={"/logement/" + location.id} className="logements__list__item__cards">
-                            <img src={location.cover} alt={location.description} className="logements-img"/>
-                            <h2 className="logements-title">{location.title}</h2>
+                {Data.map((logement) => (
+                    <div key={logement.id} className="logements__list__item">
+                        <Link to={"/logement/" + logement.id} className="logements__list__item__cards">
+                            <img src={logement.cover} alt={logement.description} className="logements-img"/>
+                            <h2 className="logements-title">{logement.title}</h2>
                         </Link>
                     </div>
                 ))}
