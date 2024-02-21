@@ -5,7 +5,7 @@ import Collapse from "../Collapse/Collapse";
 import "../Card/Card.scss";
 import Tags from "../Tags/Tags";
 import Rating from "../Rating/Rating";
-import Carrousel from "../Carrousel/Carrousel";
+import Slideshow from "../Carrousel/Carrousel";
 import Erreur404 from "../../assets/404.png";
 
 
@@ -30,7 +30,7 @@ function Card() {
 
     return (
         <main className="logement">
-            <Carrousel />
+            <Slideshow />
             <section className="logement__card">
                 <div className="logement__card__info">
                     <div>

@@ -6,7 +6,7 @@ import Data from "../../assets/logements/logements.json";
 import leftArrow from "../../assets/leftArrow.png";
 import rightArrow from "../../assets/rightArrow.png";
 
-function Carrousel () {
+function Slideshow () {
     const { id } = useParams();
     const logement = Data.find((logement) => logement.id === id);
     
@@ -73,4 +73,4 @@ function Carrousel () {
 
 
   
-export default Carrousel
+export default Slideshow
